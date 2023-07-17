@@ -1,0 +1,284 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header styles */
+
+.header {
+    padding: 85px 120px;
+    background-image: url("images/Circle design.svg");
+    background-repeat: no-repeat;
+    background-position: 85% 80%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    margin-right: 20px;
+    list-style: none;
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nav>ul li img {
+    height: 20px;
+    width: 20px;
+}
+
+.nav-title {
+    color: #3A3A3A;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* banner styles */
+
+.banner {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.banner-content {
+    max-width: 580px;
+}
+
+.banner-title {
+    color: #3A3A3A;
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner-description {
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.banner-btn {
+    border-radius: 41px;
+    background: #E02C6D;
+    padding: 5px 24px 10px 24px;
+    border: 0px;
+    color: #ffff;
+}
+
+.arrow {
+    font-size: 1.2rem;
+}
+
+.banner-img img {
+    position: relative;
+    top: 30px;
+    left: 10px;
+    width: 90%;
+}
+
+/* sponsors */
+.main {
+    padding: 30px 0px;
+}
+
+.sponsor {
+    padding: 20px 0px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    justify-content: space-around;
+    border: 1px solid;
+    border-image: linear-gradient(135deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0.60) 50.38%, rgba(192, 204, 218, 0.10) 100%);
+    border-left: 0;
+    border-right: 0;
+    border-image-slice: 1;
+
+}
+
+/* popular styles */
+.popular {
+    padding: 50px 190px;
+
+}
+
+.popular-title {
+    color: #3A3A3A;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.popular-card {
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px 10px 20px 10px;
+
+}
+
+.see {
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: end;
+    padding: 20px 0px;
+    width: 102%;
+}
+
+.see .arrow {
+    font-size: 1.4rem;
+}
+
+/* features styles */
+
+.feature {
+    padding: 30px 120px;
+    display: flex;
+    gap: 90px;
+    align-items: center;
+}
+
+.feature-title {
+    color: #0A0826;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.feature-description {
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-weight: 700;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.join-btn {
+    background: #E02C6D;
+    padding: 8px 20px;
+    color: #ffff;
+    border: 0px;
+}
+
+/* footer styles */
+.footer {
+    background-color: #0A0826;
+    color: #ffff;
+    text-align: center;
+    padding: 80px;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-description1,
+.footer-description2 {
+    color: #D9DBE1;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: Manrope;
+    margin-bottom: 5px;
+}
+.social-logo{
+    display: flex;
+    justify-content: center;
+}
+.social-img{
+    padding:10px 10px;
+}
+
+
+
+
+/* mobile screen  */
+
+@media screen and (max-width: 576px) {
+    .header {
+        padding: 10px;
+        background-position: 50% 30%;
+        background-size: contain;
+    }
+
+    .nav {
+        flex-direction: column;
+
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+
+    .banner-title {
+        font-size: 1.8rem;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    .nav-title {
+        text-align: center;
+    }
+
+    .nav ul {
+        justify-content: space-between;
+    }
+
+    .nav>ul li {
+        margin-right: 10px;
+    }
+
+    .sponsor {
+        padding: 20px 0px;
+        margin: 0px auto;
+    }
+
+    .sponsor img {
+        padding: 5px 15px;
+    }
+
+    .popular {
+        padding: 10px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .popular-img {
+        width: 100%;
+    }
+
+    .feature {
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+
+    .feature-img {
+        width: 100%;
+    }
+}
